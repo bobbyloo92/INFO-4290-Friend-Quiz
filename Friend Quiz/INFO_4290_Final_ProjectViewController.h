@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
+
 
 @interface INFO_4290_Final_ProjectViewController : UIViewController
 

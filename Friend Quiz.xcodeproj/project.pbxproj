@@ -212,6 +212,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = EB9B186B189A1F50001E9D60;
 			productRefGroup = EB9B1875189A1F51001E9D60 /* Products */;
@@ -379,6 +380,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/christianretureta/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Friend Quiz/Friend Quiz-Prefix.pch";
 				INFOPLIST_FILE = "Friend Quiz/Friend Quiz-Info.plist";
@@ -392,6 +397,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/christianretureta/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Friend Quiz/Friend Quiz-Prefix.pch";
 				INFOPLIST_FILE = "Friend Quiz/Friend Quiz-Info.plist";

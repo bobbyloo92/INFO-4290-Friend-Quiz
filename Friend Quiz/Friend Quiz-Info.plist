@@ -6,8 +6,23 @@
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
+	<key>FacebookAppID</key>
+	<string>1400201000233075</string>
+	<key>FacebookDisplayName</key>
+	<string>Friend Quiz</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1400201000233075</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>INFO3246.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A14A314189B6DDE008FAEC7 /* background_image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A14A313189B6DDE008FAEC7 /* background_image_2.png */; };
+		7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14A319189B7029008FAEC7 /* GameStart.m */; };
+		7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */; };
+		7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C86B189B7AC30098E573 /* AnswerQuestions.m */; };
 		EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1877189A1F51001E9D60 /* Foundation.framework */; };
 		EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */; };
 		EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B187B189A1F51001E9D60 /* UIKit.framework */; };
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A14A313189B6DDE008FAEC7 /* background_image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_image_2.png; path = "../../../../Volumes/NO NAME/background_image_2.png"; sourceTree = "<group>"; };
+		7A14A318189B7029008FAEC7 /* GameStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStart.h; sourceTree = "<group>"; };
+		7A14A319189B7029008FAEC7 /* GameStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStart.m; sourceTree = "<group>"; };
+		7AF8C864189B77C30098E573 /* ChooseQuestionPacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseQuestionPacks.h; sourceTree = "<group>"; };
+		7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseQuestionPacks.m; sourceTree = "<group>"; };
+		7AF8C86A189B7AC30098E573 /* AnswerQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerQuestions.h; sourceTree = "<group>"; };
+		7AF8C86B189B7AC30098E573 /* AnswerQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerQuestions.m; sourceTree = "<group>"; };
 		EB9B1874189A1F51001E9D60 /* Friend Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friend Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9B1877189A1F51001E9D60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,11 +123,18 @@
 		EB9B187D189A1F51001E9D60 /* Friend Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				7A14A313189B6DDE008FAEC7 /* background_image_2.png */,
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
 				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
 				EB9B188C189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.h */,
 				EB9B188D189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m */,
+				7A14A318189B7029008FAEC7 /* GameStart.h */,
+				7A14A319189B7029008FAEC7 /* GameStart.m */,
+				7AF8C864189B77C30098E573 /* ChooseQuestionPacks.h */,
+				7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */,
+				7AF8C86A189B7AC30098E573 /* AnswerQuestions.h */,
+				7AF8C86B189B7AC30098E573 /* AnswerQuestions.m */,
 				EB9B188F189A1F52001E9D60 /* Images.xcassets */,
 				EB9B187E189A1F51001E9D60 /* Supporting Files */,
 			);
@@ -230,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A14A314189B6DDE008FAEC7 /* background_image_2.png in Resources */,
 				EB9B1890189A1F52001E9D60 /* Images.xcassets in Resources */,
 				EB9B1882189A1F51001E9D60 /* InfoPlist.strings in Resources */,
 				EB9B188B189A1F52001E9D60 /* Main.storyboard in Resources */,
@@ -253,6 +272,9 @@
 			files = (
 				EB9B1888189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m in Sources */,
 				EB9B1884189A1F51001E9D60 /* main.m in Sources */,
+				7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */,
+				7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */,
+				7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */,
 				EB9B188E189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +492,7 @@
 				EB9B18A8189A1F52001E9D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB9B18A9189A1F52001E9D60 /* Build configuration list for PBXNativeTarget "Friend QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +501,7 @@
 				EB9B18AB189A1F52001E9D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

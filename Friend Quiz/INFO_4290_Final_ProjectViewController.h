@@ -11,5 +11,6 @@
 
 
 @interface INFO_4290_Final_ProjectViewController : UIViewController
+@property (strong, nonatomic) IBOutlet FBLoginView *loginView;
 
 @end

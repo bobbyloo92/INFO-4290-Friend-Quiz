@@ -13,11 +13,14 @@
 @end
 
 @implementation INFO_4290_Final_ProjectViewController
+@synthesize loginView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    loginView.readPermissions = @[@"basic_info",@"email",@"user_likes"];
     
   //  FBLoginView *loginView = [[FBLoginView alloc] init];
     // Align the button in the center horizontally

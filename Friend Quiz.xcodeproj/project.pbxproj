@@ -30,6 +30,8 @@
 		EB9B1899189A1F52001E9D60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B187B189A1F51001E9D60 /* UIKit.framework */; };
 		EB9B18A1189A1F52001E9D60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB9B189F189A1F52001E9D60 /* InfoPlist.strings */; };
 		EB9B18A3189A1F52001E9D60 /* Friend_QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B18A2189A1F52001E9D60 /* Friend_QuizTests.m */; };
+		EBA5EF0B18A3383600493FBF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA5EF0A18A3383600493FBF /* FacebookSDK.framework */; };
+		EBA5EF0D18A3385000493FBF /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBA5EF0C18A3385000493FBF /* FBUserSettingsViewResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		EB9B189E189A1F52001E9D60 /* Friend QuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Friend QuizTests-Info.plist"; sourceTree = "<group>"; };
 		EB9B18A0189A1F52001E9D60 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB9B18A2189A1F52001E9D60 /* Friend_QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Friend_QuizTests.m; sourceTree = "<group>"; };
+		EBA5EF0A18A3383600493FBF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		EBA5EF0C18A3385000493FBF /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */,
+				EBA5EF0B18A3383600493FBF /* FacebookSDK.framework in Frameworks */,
 				EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */,
 				EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */,
 			);
@@ -127,6 +132,8 @@
 		EB9B1876189A1F51001E9D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBA5EF0C18A3385000493FBF /* FBUserSettingsViewResources.bundle */,
+				EBA5EF0A18A3383600493FBF /* FacebookSDK.framework */,
 				EB9B1877189A1F51001E9D60 /* Foundation.framework */,
 				EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */,
 				EB9B187B189A1F51001E9D60 /* UIKit.framework */,
@@ -277,6 +284,7 @@
 				EB9B1890189A1F52001E9D60 /* Images.xcassets in Resources */,
 				EB9B1882189A1F51001E9D60 /* InfoPlist.strings in Resources */,
 				EB9B188B189A1F52001E9D60 /* Main.storyboard in Resources */,
+				EBA5EF0D18A3385000493FBF /* FBUserSettingsViewResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

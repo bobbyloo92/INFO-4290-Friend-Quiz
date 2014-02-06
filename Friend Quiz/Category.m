@@ -8,11 +8,11 @@
 
 #import "Category.h"
 
-@interface Category ()
+@interface Category2 ()
 
 @end
 
-@implementation Category
+@implementation Category2
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

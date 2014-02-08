@@ -7,6 +7,7 @@
 //
 
 #import "INFO_4290_Final_ProjectAppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @implementation INFO_4290_Final_ProjectAppDelegate
 
@@ -15,7 +16,12 @@
     // Override point for customization after application launch.
     
     [FBLoginView class];
+    
+
+    
     return YES;
+    
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

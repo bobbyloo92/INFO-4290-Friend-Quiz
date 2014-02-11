@@ -32,6 +32,7 @@
 		EB9B18A3189A1F52001E9D60 /* Friend_QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B18A2189A1F52001E9D60 /* Friend_QuizTests.m */; };
 		EBA5EF0B18A3383600493FBF /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA5EF0A18A3383600493FBF /* FacebookSDK.framework */; };
 		EBA5EF0D18A3385000493FBF /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EBA5EF0C18A3385000493FBF /* FBUserSettingsViewResources.bundle */; };
+		EBA5EF1018A9E4D400493FBF /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		EB9B18A2189A1F52001E9D60 /* Friend_QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Friend_QuizTests.m; sourceTree = "<group>"; };
 		EBA5EF0A18A3383600493FBF /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		EBA5EF0C18A3385000493FBF /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBUserSettingsViewResources.bundle; path = ../FacebookSDK/FacebookSDK.framework/Versions/A/Resources/FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
+		EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
 				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
+				EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */,
+				EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */,
 				EB9B188C189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.h */,
 				EB9B188D189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m */,
 				7A14A318189B7029008FAEC7 /* GameStart.h */,
@@ -307,6 +312,7 @@
 				EB9B1884189A1F51001E9D60 /* main.m in Sources */,
 				7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */,
 				7AFEE0AA189C58DA00D84FA3 /* Category.m in Sources */,
+				EBA5EF1018A9E4D400493FBF /* MainMenuViewController.m in Sources */,
 				7AFEE0A7189C4F8E00D84FA3 /* Helppage.m in Sources */,
 				7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */,
 				7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */,

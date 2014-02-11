@@ -10,7 +10,9 @@
 #import <FacebookSDK/FacebookSDK.h>
 
 
-@interface INFO_4290_Final_ProjectViewController : UIViewController
+@interface INFO_4290_Final_ProjectViewController : UIViewController <FBLoginViewDelegate>
 @property (strong, nonatomic) IBOutlet FBLoginView *loginView;
+
+
 
 @end

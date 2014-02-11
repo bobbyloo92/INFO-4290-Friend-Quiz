@@ -17,6 +17,7 @@
     
     [FBLoginView class];
     
+    
 
     
     return YES;
@@ -50,5 +51,33 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+-(BOOL)checkFacebookSession
+{
+    if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded)
+        
+    {
+        
+        
+        
+        
+        NSLog(@"Logged in to Facebook");
+        UIAlertView *alertDialog;
+        
+        alertDialog = [[UIAlertView alloc]initWithTitle:@"Facebook" message:@"You are logged in to Facebook" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"No", nil];
+        
+        [alertDialog show];
+        
+        return YES;
+        
+    }
+    else{
+        
+        
+        NSLog(@"Not logged in to Facebook");
+        return NO;
+    }
+    
+}
+
 
 @end

@@ -7,12 +7,18 @@
 //
 
 #import "MainMenuViewController.h"
+#import "INFO_4290_Final_ProjectAppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface MainMenuViewController ()
 
 @end
 
-@implementation MainMenuViewController
+@implementation MainMenuViewController{
+    
+    
+    INFO_4290_Final_ProjectAppDelegate *appDelegate;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +32,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    appDelegate = (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
+    
+   // [appDelegate checkFacebookSession];
 	// Do any additional setup after loading the view.
+    
+    if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded){
+        
+        NSLog(@"Facebook user logged in!!!!");
+        
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

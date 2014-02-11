@@ -8,6 +8,7 @@
 
 #import "INFO_4290_Final_ProjectViewController.h"
 #import "INFO_4290_Final_ProjectAppDelegate.h"
+#import "MainMenuViewController.h"
 
 @interface INFO_4290_Final_ProjectViewController ()
 
@@ -34,9 +35,13 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     
-
+    //inherit the shared app delegate object.
     appDelegate= (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
+    //Refer to the check Facebook Session method in the App Delegate.m file
     [appDelegate checkFacebookSession];
+    
+    //initialize an object from the main view controller
+    MainMenuViewController *mVC = [[MainMenuViewController alloc]init];
     
     
 
@@ -45,13 +50,22 @@
         
         NSLog(@"Logged in to Facebook !");
         
-             [self performSegueWithIdentifier:@"startGameSegue" sender:self];
+        //     [self performSegueWithIdentifier:@"startGameSegue" sender:self];
+       
+        //Show the main View Controller if the user is successful in logging in.
+        
+        
+        [self presentViewController:mVC animated:YES completion:nil];
+        
+
+
     }
     else{
         
-        [self performSegueWithIdentifier:@"startGameSegue" sender:self];
+     //   [self performSegueWithIdentifier:@"startGameSegue" sender:self];
         
         NSLog(@"Not logged in to Facebook at all!");
+        
     }
     
 

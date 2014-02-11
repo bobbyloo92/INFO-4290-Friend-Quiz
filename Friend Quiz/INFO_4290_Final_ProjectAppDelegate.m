@@ -18,7 +18,7 @@
     [FBLoginView class];
     
     
-
+    [self checkFacebookSession];
     
     return YES;
     
@@ -51,6 +51,8 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+//This method is impolemented to check if a Facebook Session is started.  IF it is it will return a TRUE value and it will confirm that the user is logged in.
 -(BOOL)checkFacebookSession
 {
     if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded)

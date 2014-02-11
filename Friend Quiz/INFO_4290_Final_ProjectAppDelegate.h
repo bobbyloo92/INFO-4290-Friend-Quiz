@@ -13,6 +13,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+
+
 -(BOOL)checkFacebookSession; 
 
 @end

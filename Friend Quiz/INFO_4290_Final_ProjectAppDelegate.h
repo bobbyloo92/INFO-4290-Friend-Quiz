@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
 
-@interface INFO_4290_Final_ProjectAppDelegate : UIResponder <UIApplicationDelegate>
+@interface INFO_4290_Final_ProjectAppDelegate : UIResponder <UIApplicationDelegate, FBLoginViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

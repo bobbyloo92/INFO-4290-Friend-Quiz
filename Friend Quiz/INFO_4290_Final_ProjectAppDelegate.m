@@ -9,13 +9,14 @@
 #import "INFO_4290_Final_ProjectAppDelegate.h"
 #import <FacebookSDK/FacebookSDK.h>
 
-@implementation INFO_4290_Final_ProjectAppDelegate
+@implementation INFO_4290_Final_ProjectAppDelegate 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     
     [FBLoginView class];
+    [FBProfilePictureView class];
     
     
     [self checkFacebookSession];
@@ -23,6 +24,21 @@
     return YES;
     
     
+}
+
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    
+    
+    
+    
+    
+    // Call FBAppCall's handleOpenURL:sourceApplication to handle Facebook app responses
+    BOOL wasHandled = [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
+    
+    // You can add your app-specific url handling code here if needed
+    
+    return wasHandled;
+
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -53,6 +69,7 @@
 }
 
 //This method is impolemented to check if a Facebook Session is started.  IF it is it will return a TRUE value and it will confirm that the user is logged in.
+
 -(BOOL)checkFacebookSession
 {
     if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded)

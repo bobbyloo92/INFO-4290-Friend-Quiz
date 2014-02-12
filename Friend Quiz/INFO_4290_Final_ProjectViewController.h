@@ -12,7 +12,10 @@
 
 @interface INFO_4290_Final_ProjectViewController : UIViewController <FBLoginViewDelegate>
 @property (strong, nonatomic) IBOutlet FBLoginView *loginView;
+//@property (strong, nonatomic) IBOutlet FBProfilePictureView *profilePicture;
 
+@property (strong, nonatomic) IBOutlet FBProfilePictureView *profilePic;
 
+@property (strong, nonatomic) IBOutlet UILabel *statusLabel;
 
 @end

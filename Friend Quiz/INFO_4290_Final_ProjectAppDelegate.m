@@ -7,6 +7,8 @@
 //
 
 #import "INFO_4290_Final_ProjectAppDelegate.h"
+#import "INFO_4290_Final_ProjectViewController.h"
+#import "MainMenuViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 
 @implementation INFO_4290_Final_ProjectAppDelegate 
@@ -19,7 +21,24 @@
     [FBProfilePictureView class];
     
     
-    [self checkFacebookSession];
+    INFO_4290_Final_ProjectViewController *viewContoller= [[INFO_4290_Final_ProjectViewController alloc]init];
+    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc]init];
+    
+
+    
+  // [self.window setRootViewController:viewContoller];
+    
+   // self.window.rootViewController = viewContoller;
+ //   [self.window addSubview:viewContoller.view];
+  //  [self.window addSubview:mainMenuViewController.view];
+    
+    
+
+   
+    
+   // [self.window makeKeyAndVisible];
+    
+     [self checkFacebookSession];
     
     return YES;
     
@@ -79,22 +98,29 @@
         
         
         
-        NSLog(@"Logged in to Facebook");
+        NSLog(@"Logged in to Facebook. Confirmed!!!");
         UIAlertView *alertDialog;
         
-        alertDialog = [[UIAlertView alloc]initWithTitle:@"Facebook" message:@"You are logged in to Facebook" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"No", nil];
+        alertDialog = [[UIAlertView alloc]initWithTitle:@"Facebook" message:@"You are logged in to Facebook" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:@"Cancel", nil];
         
         [alertDialog show];
         
-        return YES;
-        
+        return TRUE;
+     
     }
-    else{
+    else if (![FBSession activeSession].state == FBSessionStateCreatedTokenLoaded)
+    
+    {
+        
         
         
         NSLog(@"Not logged in to Facebook");
-        return NO;
+        return FALSE;
+    
     }
+    
+    return TRUE;
+
     
 }
 

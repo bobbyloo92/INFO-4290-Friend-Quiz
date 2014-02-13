@@ -34,20 +34,6 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    
-
-    
-}
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    loginView.readPermissions = @[@"basic_info",@"email",@"user_likes"];
-    
-    loginView.delegate = self;
-
-    
     //inherit the shared app delegate object.
     appDelegate= (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
     //Refer to the check Facebook Session method in the App Delegate.m file
@@ -55,20 +41,15 @@
     
     //initialize an object from the main view controller
     MainMenuViewController *mVC = [[MainMenuViewController alloc]init];
-    
-    
-    
+    //If User is logged in (Method is in the AppDelegate.m class
     if([appDelegate checkFacebookSession] == TRUE){
         
         
-        NSLog(@"Logged in to Facebook !");
+        NSLog(@"Logged in to Facebook !!");
         
-        //     [self performSegueWithIdentifier:@"startGameSegue" sender:self];
+        //Go to the next scene if the user is logged in, referencing the button's segue identifier
+        [self performSegueWithIdentifier:@"startGameSegue" sender:self];
         
-        //Show the main View Controller if the user is successful in logging in.
-        
-        
-   //     [self presentViewController:mVC animated:YES completion:nil];
         
         
         
@@ -82,6 +63,20 @@
     }
     
 
+
+    
+}
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    
+    loginView.readPermissions = @[@"basic_info",@"email",@"user_likes"];
+    
+    loginView.delegate = self;
+
+    
+  
     
   //  FBLoginView *loginView = [[FBLoginView alloc] init];
     // Align the button in the center horizontally
@@ -198,7 +193,22 @@
 
     
     
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([[segue identifier] isEqualToString:(@"startGameSegue")])
+    
+    {
+        
+        
+    
+        MainMenuViewController *viewController = [segue destinationViewController];
+        
+      //  [self performSegueWithIdentifier:@"startGameSegue" sender:self];
+        
+    }
+    
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

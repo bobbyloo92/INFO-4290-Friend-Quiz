@@ -14,4 +14,6 @@
 
 @property int selectedQuestionPackID;
 
+- (IBAction)buttonNext:(id)sender;
+
 @end

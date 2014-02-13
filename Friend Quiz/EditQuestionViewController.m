@@ -42,4 +42,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonNext:(id)sender {
+    
+    [self performSegueWithIdentifier:@"toSendRequest" sender:nil];
+}
 @end

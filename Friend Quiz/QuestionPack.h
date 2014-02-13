@@ -23,7 +23,7 @@
 @property int questionIndex;
 
 // Question 1
-@property NSString *questionTitle;
+@property NSMutableArray *questionTitle;
 
 @property NSMutableArray *questionSuggestedAnswers;
 @property NSMutableArray *questionAnswers;

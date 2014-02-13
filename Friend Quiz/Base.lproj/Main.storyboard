@@ -266,10 +266,10 @@
             </objects>
             <point key="canvasLocation" x="1202" y="-18"/>
         </scene>
-        <!--View Controller - Title-->
+        <!--Edit Question View Controller - Title-->
         <scene sceneID="NG5-v4-RqH">
             <objects>
-                <viewController id="tqz-qG-0C2" sceneMemberID="viewController">
+                <viewController id="tqz-qG-0C2" customClass="EditQuestionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JOI-Ey-fg2"/>
                         <viewControllerLayoutGuide type="bottom" id="2SN-Wm-M9t"/>

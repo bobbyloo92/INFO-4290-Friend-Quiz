@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "QuestionPack.h"
+
 @interface EditQuestionViewController : UIViewController
 
 @property int selectedQuestionPackID;

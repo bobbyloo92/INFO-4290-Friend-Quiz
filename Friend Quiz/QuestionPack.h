@@ -15,6 +15,8 @@
 
 - (void)customMethod; // add optional methods to customize the singleton class\
 
+-(void)enterQuestionPackIDandGetInfoFromDatabase: (int)packID;
+
 
 @property int questionPackID;
 

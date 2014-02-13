@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import "EditQuestionViewController.h"
-#import "Sendrequest.h"
+#import "QuestionPack.h"
 
 @interface PackSelectViewController : UIViewController
 
 @property int selectedQuestionPackID;
 
+-(void)selectQuestionPackWithID: (int)packID;
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 

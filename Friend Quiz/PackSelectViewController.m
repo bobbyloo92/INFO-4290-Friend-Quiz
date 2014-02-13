@@ -45,4 +45,9 @@
     destination.selectedQuestionPackID = selectedQuestionPackID;
 }
 
+-(void)selectQuestionPackWithID: (int)packID
+{
+    [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:packID];
+}
+
 @end

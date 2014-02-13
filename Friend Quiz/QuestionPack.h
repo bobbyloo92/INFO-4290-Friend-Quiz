@@ -15,10 +15,12 @@
 
 - (void)customMethod; // add optional methods to customize the singleton class\
 
--(void)enterQuestionPackIDandGetInfoFromDatabase: (int)packID;
+- (void)enterQuestionPackIDandGetInfoFromDatabase: (int)packID;
 
 
 @property int questionPackID;
+
+@property int questionIndex;
 
 // Question 1
 @property NSString *question1Question;

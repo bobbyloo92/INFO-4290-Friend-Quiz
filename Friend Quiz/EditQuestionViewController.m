@@ -14,7 +14,8 @@
 
 @implementation EditQuestionViewController
 
-@synthesize selectedQuestionPackID;
+@synthesize selectedQuestionPackID,
+questionTitleLabel,question1Label,question2Label,question3Label,question4Label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,7 +33,7 @@
     
     [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:selectedQuestionPackID];
     
-    [QuestionPack sharedCenter] questionTitle[[QuestionPack sharedCenter]questionIndex];
+    //questionTitleLabel.text = [QuestionPack sharedCenter]
     
     
 }

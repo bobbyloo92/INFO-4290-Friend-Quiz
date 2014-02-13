@@ -44,10 +44,15 @@
 
 - (IBAction)buttonNext:(id)sender {
     
-    if([QuestionPack sharedCenter].questionIndex < 5)
-        [self performSegueWithIdentifier:@"toSelf" sender:nil];
+    if([QuestionPack sharedCenter].questionIndex == 5)
+    {
+        [self performSegueWithIdentifier:@"toSendRequest" sender:nil];
+    }
     else
-    [self performSegueWithIdentifier:@"toSendRequest" sender:nil];
+    {
+        [self performSegueWithIdentifier:@"toSelf" sender:nil];
+    }
+    
     
     [QuestionPack sharedCenter].questionIndex++;
     

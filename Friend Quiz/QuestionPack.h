@@ -25,10 +25,10 @@
 // Question 1
 @property NSString *questionTitle;
 
-@property NSArray *questionSuggestedAnswers;
-@property NSArray *questionAnswers;
+@property NSMutableArray *questionSuggestedAnswers;
+@property NSMutableArray *questionAnswers;
 
-@property NSArray *questionCorrectAnswer;
+@property NSMutableArray *questionCorrectAnswer;
 
 
 

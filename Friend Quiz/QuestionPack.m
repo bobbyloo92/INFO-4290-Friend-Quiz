@@ -41,6 +41,23 @@ static QuestionPack *sharedAwardCenter = nil;    // static instance variable
     
     //Database code
     
+    //testing code
+    questionTitle = [NSArray arrayWithObjects:
+                     @"How old am I?",
+                     @"What color do I like?",
+                     @"What's my favorite food?",
+                     @"What's my favorite drink?",
+                     @"Where do I live?",nil];
+    
+    questionSuggestedAnswers = [[NSMutableArray alloc] initWithCapacity: 5];
+    
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:0];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:1];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:2];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:3];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:4];
+  
+    
 
 }
 

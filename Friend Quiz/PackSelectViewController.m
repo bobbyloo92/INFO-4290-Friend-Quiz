@@ -37,4 +37,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    EditQuestionViewController *destination = [segue destinationViewController];
+    destination.selectedQuestionPackID = selectedQuestionPackID;
+}
+
 @end

@@ -32,6 +32,8 @@
     
     [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:selectedQuestionPackID];
     
+    [QuestionPack sharedCenter] questionTitle[[QuestionPack sharedCenter]questionIndex];
+    
     
 }
 
@@ -43,7 +45,7 @@
 
 - (IBAction)buttonNext:(id)sender {
     
-    if([QuestionPack sharedCenter].questionIndex == 5)
+    if([QuestionPack sharedCenter].questionIndex == 4)
     {
         [self performSegueWithIdentifier:@"toSendRequest" sender:nil];
     }

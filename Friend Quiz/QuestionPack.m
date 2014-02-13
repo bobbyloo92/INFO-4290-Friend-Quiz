@@ -51,11 +51,16 @@ static QuestionPack *sharedAwardCenter = nil;    // static instance variable
     
     questionSuggestedAnswers = [[NSMutableArray alloc] initWithCapacity: 5];
     
-    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:0];
-    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:1];
-    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:2];
-    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:3];
-    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:@"0",@"0",@"0",nil] atIndex:4];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:
+                                            @"10",@"20",@"30",@"40",nil] atIndex:0];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:
+                                            @"Black",@"White",@"Blue",@"Red",nil] atIndex:1];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:
+                                            @"Cake",@"Ice cream",@"candy",@"insects",nil] atIndex:2];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:
+                                            @"7up",@"Coke",@"Sprit",@"Vodka",nil] atIndex:3];
+    [questionSuggestedAnswers insertObject:[NSMutableArray arrayWithObjects:
+                                            @"Vancouver",@"Raincover",@"Snowcover",@"Earth",nil] atIndex:4];
   
     
 

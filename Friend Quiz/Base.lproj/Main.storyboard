@@ -429,6 +429,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="1ol-SM-gVb"/>
                     <connections>
+                        <outlet property="question1Label" destination="2OL-T2-xlu" id="INz-oI-SqN"/>
+                        <outlet property="question2Label" destination="T1N-rE-mj6" id="cxO-PQ-8vm"/>
+                        <outlet property="question3Label" destination="cnY-kF-I97" id="Oa5-ja-AQ2"/>
+                        <outlet property="question4Label" destination="Okq-dg-peF" id="Ph9-zG-PwM"/>
+                        <outlet property="questionTitleLabel" destination="VtW-QG-sHT" id="XHH-2E-Jec"/>
                         <segue destination="JjB-H6-aGr" kind="modal" identifier="toSendRequest" id="9O7-Jm-MUa"/>
                     </connections>
                 </viewController>

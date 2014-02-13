@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [QuestionPack sharedCenter].questionIndex = 1;
 }
 
 - (void)didReceiveMemoryWarning

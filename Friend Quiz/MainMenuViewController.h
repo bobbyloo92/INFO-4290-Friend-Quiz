@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import "INFO_4290_Final_ProjectAppDelegate.h"
 
-@interface MainMenuViewController : UIViewController
+@interface MainMenuViewController : UIViewController <FBLoginViewDelegate>
+
+@property (strong, nonatomic) IBOutlet FBProfilePictureView *pictureView;
+
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet FBLoginView *loginView;
 
 @end

@@ -33,6 +33,8 @@
     
 }
 
+
+
 -(void)viewDidAppear:(BOOL)animated{
     //inherit the shared app delegate object.
     appDelegate= (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
@@ -88,6 +90,8 @@
   
     
 }
+
+
 
 /*
 -(BOOL)checkFacebookSession

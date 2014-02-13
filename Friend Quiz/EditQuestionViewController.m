@@ -33,7 +33,7 @@ questionTitleLabel,question1Label,question2Label,question3Label,question4Label;
     
     [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:selectedQuestionPackID];
     
-    //questionTitleLabel.text = [QuestionPack sharedCenter]
+    //questionTitleLabel.text = [QuestionPack sharedCenter].questionTitle[0] ;
     
     
 }

@@ -10,4 +10,6 @@
 
 @interface PackSelectViewController : UIViewController
 
+@property int selectedQuestionPackID;
+
 @end

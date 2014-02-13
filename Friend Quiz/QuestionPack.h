@@ -10,6 +10,12 @@
 
 @interface QuestionPack : NSObject
 
+
++ (QuestionPack *)sharedCenter;   // class method to return the singleton object
+
+- (void)customMethod; // add optional methods to customize the singleton class\
+
+
 @property int questionPackID;
 
 // Question 1

@@ -17,6 +17,29 @@ question3Question, question3Answers, question3CorrectAnswer, question3SuggestedA
 question4Question, question4Answers, question4CorrectAnswer, question4SuggestedAnswers,
 question5Question, question5Answers, question5CorrectAnswer, question5SuggestedAnswers;
 
+
+static QuestionPack *sharedAwardCenter = nil;    // static instance variable
+
++ (QuestionPack *)sharedCenter {
+    if (sharedAwardCenter == nil) {
+        sharedAwardCenter = [[super allocWithZone:NULL] init];
+    }
+    return sharedAwardCenter;
+}
+
+- (id)init {
+    if ( (self = [super init]) ) {
+        // your custom initialization
+    }
+    return self;
+}
+
+- (void)customMethod {
+    // implement your custom code here
+}
+
+
+
 -(void)enterQuestionPackIDandGetInfoFromDatabase: (int)packID
 {
     questionPackID = packID;

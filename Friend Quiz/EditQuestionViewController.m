@@ -32,7 +32,6 @@
     
     [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:selectedQuestionPackID];
     
-    [QuestionPack sharedCenter].questionIndex++;
     
 }
 

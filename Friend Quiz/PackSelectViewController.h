@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#import "EditQuestionViewController.h"
+
 @interface PackSelectViewController : UIViewController
 
 @property int selectedQuestionPackID;
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+
+
 
 @end

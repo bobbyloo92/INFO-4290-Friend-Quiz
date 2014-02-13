@@ -10,6 +10,6 @@
 
 @interface EditQuestionViewController : UIViewController
 
-@property selectedQuestionPackID;
+@property int selectedQuestionPackID;
 
 @end

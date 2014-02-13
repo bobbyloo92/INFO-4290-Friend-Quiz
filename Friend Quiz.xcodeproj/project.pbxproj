@@ -20,7 +20,6 @@
 		AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1944C18AC39D600116E23 /* QuestionPack.m */; };
 		AAD1945018AC440700116E23 /* PackSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1944F18AC440700116E23 /* PackSelectViewController.m */; };
 		AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1945218AC452D00116E23 /* EditQuestionViewController.m */; };
-		AAD1949D18AC53EE00116E23 /* sharedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1949C18AC53EE00116E23 /* sharedInfo.m */; };
 		EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1877189A1F51001E9D60 /* Foundation.framework */; };
 		EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */; };
 		EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B187B189A1F51001E9D60 /* UIKit.framework */; };
@@ -73,8 +72,6 @@
 		AAD1944F18AC440700116E23 /* PackSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackSelectViewController.m; sourceTree = "<group>"; };
 		AAD1945118AC452D00116E23 /* EditQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditQuestionViewController.h; sourceTree = "<group>"; };
 		AAD1945218AC452D00116E23 /* EditQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionViewController.m; sourceTree = "<group>"; };
-		AAD1949B18AC53EE00116E23 /* sharedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sharedInfo.h; sourceTree = "<group>"; };
-		AAD1949C18AC53EE00116E23 /* sharedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sharedInfo.m; sourceTree = "<group>"; };
 		EB9B1874189A1F51001E9D60 /* Friend Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friend Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9B1877189A1F51001E9D60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -161,8 +158,6 @@
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
 				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
-				AAD1949B18AC53EE00116E23 /* sharedInfo.h */,
-				AAD1949C18AC53EE00116E23 /* sharedInfo.m */,
 				AAD1945118AC452D00116E23 /* EditQuestionViewController.h */,
 				AAD1945218AC452D00116E23 /* EditQuestionViewController.m */,
 				AAD1944E18AC440700116E23 /* PackSelectViewController.h */,
@@ -334,7 +329,6 @@
 				7AFEE0A7189C4F8E00D84FA3 /* Helppage.m in Sources */,
 				7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */,
 				7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */,
-				AAD1949D18AC53EE00116E23 /* sharedInfo.m in Sources */,
 				7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */,
 				AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */,
 				EB9B188E189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m in Sources */,

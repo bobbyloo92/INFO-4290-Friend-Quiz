@@ -44,6 +44,8 @@
 
 - (IBAction)buttonNext:(id)sender {
     
-    [self performSegueWithIdentifier:@"toSendRequest" sender:nil];
+    //[self performSegueWithIdentifier:@"toSendRequest" sender:nil];
+    
+    [self performSegueWithIdentifier:@"toSelf" sender:nil];
 }
 @end

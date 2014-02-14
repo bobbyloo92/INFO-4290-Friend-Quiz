@@ -36,6 +36,9 @@
 		EB9B18A1189A1F52001E9D60 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB9B189F189A1F52001E9D60 /* InfoPlist.strings */; };
 		EB9B18A3189A1F52001E9D60 /* Friend_QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B18A2189A1F52001E9D60 /* Friend_QuizTests.m */; };
 		EBA5EF1018A9E4D400493FBF /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */; };
+		EBA5EF1618ADB97200493FBF /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */; };
+		EBA5EF1A18ADC2A100493FBF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1918ADC2A100493FBF /* SWRevealViewController.m */; };
+		EBA5EF2018ADC49000493FBF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1F18ADC49000493FBF /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,12 @@
 		EB9B18A2189A1F52001E9D60 /* Friend_QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Friend_QuizTests.m; sourceTree = "<group>"; };
 		EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
 		EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		EBA5EF1418ADB97200493FBF /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		EBA5EF1818ADC2A100493FBF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		EBA5EF1918ADC2A100493FBF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		EBA5EF1E18ADC49000493FBF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		EBA5EF1F18ADC49000493FBF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +135,8 @@
 		EB9B186B189A1F50001E9D60 = {
 			isa = PBXGroup;
 			children = (
+				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
+				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
 				EB9B187D189A1F51001E9D60 /* Friend Quiz */,
 				EB9B189C189A1F52001E9D60 /* Friend QuizTests */,
 				EB9B1876189A1F51001E9D60 /* Frameworks */,
@@ -157,6 +168,7 @@
 		EB9B187D189A1F51001E9D60 /* Friend Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				EBA5EF1718ADC22900493FBF /* Libraries */,
 				7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */,
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
@@ -165,6 +177,8 @@
 				EB9B188D189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m */,
 				EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */,
 				EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */,
+				EBA5EF1418ADB97200493FBF /* SideMenuViewController.h */,
+				EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */,
 				AAD1949E18AC572500116E23 /* SendRequestViewController.h */,
 				AAD1949F18AC572500116E23 /* SendRequestViewController.m */,
 				AAD1945118AC452D00116E23 /* EditQuestionViewController.h */,
@@ -222,6 +236,15 @@
 				EB9B189F189A1F52001E9D60 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBA5EF1718ADC22900493FBF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EBA5EF1818ADC2A100493FBF /* SWRevealViewController.h */,
+				EBA5EF1918ADC2A100493FBF /* SWRevealViewController.m */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +352,9 @@
 				7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */,
 				AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */,
 				7AFEE0AA189C58DA00D84FA3 /* Category.m in Sources */,
+				EBA5EF1A18ADC2A100493FBF /* SWRevealViewController.m in Sources */,
+				EBA5EF2018ADC49000493FBF /* MainViewController.m in Sources */,
+				EBA5EF1618ADB97200493FBF /* SideMenuViewController.m in Sources */,
 				EBA5EF1018A9E4D400493FBF /* MainMenuViewController.m in Sources */,
 				AAD1945018AC440700116E23 /* PackSelectViewController.m in Sources */,
 				7AFEE0A7189C4F8E00D84FA3 /* Helppage.m in Sources */,

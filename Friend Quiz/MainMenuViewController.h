@@ -16,5 +16,6 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet FBLoginView *loginView;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *sideBarButton;
 
 @end

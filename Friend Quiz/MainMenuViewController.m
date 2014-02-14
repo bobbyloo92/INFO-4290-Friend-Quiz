@@ -9,7 +9,9 @@
 #import "MainMenuViewController.h"
 #import "INFO_4290_Final_ProjectAppDelegate.h"
 #import "INFO_4290_Final_ProjectViewController.h"
+#import "SideMenuViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "SWRevealViewController.h"
 
 @interface MainMenuViewController ()
 
@@ -21,7 +23,7 @@
     INFO_4290_Final_ProjectAppDelegate *appDelegate;
 }
 
-@synthesize nameLabel, pictureView, loginView;
+@synthesize nameLabel, pictureView, loginView, sideBarButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,7 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    //Load the Facebook Login classes so the picture and login information appears
     [FBLoginView class];
     [FBProfilePictureView class];
     
@@ -45,10 +47,15 @@
     
     appDelegate = (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
     
+    SideMenuViewController *sideMenuController = [[SideMenuViewController alloc]init];
+    
+    
+   // sideBarButton.target = self.
    // [appDelegate checkFacebookSession];
 	// Do any additional setup after loading the view.
     
     if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded){
+        
         
         NSLog(@"Facebook user logged in!!!!");
         

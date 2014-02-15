@@ -9,6 +9,7 @@
 #import "INFO_4290_Final_ProjectViewController.h"
 #import "INFO_4290_Final_ProjectAppDelegate.h"
 #import "MainMenuViewController.h"
+#import "MainViewController.h"
 
 @interface INFO_4290_Final_ProjectViewController ()
 
@@ -50,7 +51,9 @@
         NSLog(@"Logged in to Facebook !!");
         
         //Go to the next scene if the user is logged in, referencing the button's segue identifier
-        [self performSegueWithIdentifier:@"startGameSegue" sender:self];
+       // [self performSegueWithIdentifier:@"startGameSegue" sender:self];
+        
+        [self performSegueWithIdentifier:@"gameSegue" sender:self];
         
         
         

@@ -103,8 +103,8 @@
 		EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
 		EBA5EF1818ADC2A100493FBF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
 		EBA5EF1918ADC2A100493FBF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
-		EBA5EF1E18ADC49000493FBF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		EBA5EF1F18ADC49000493FBF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		EBA5EF1E18ADC49000493FBF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		EBA5EF1F18ADC49000493FBF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +135,6 @@
 		EB9B186B189A1F50001E9D60 = {
 			isa = PBXGroup;
 			children = (
-				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
-				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
 				EB9B187D189A1F51001E9D60 /* Friend Quiz */,
 				EB9B189C189A1F52001E9D60 /* Friend QuizTests */,
 				EB9B1876189A1F51001E9D60 /* Frameworks */,
@@ -170,6 +168,8 @@
 			children = (
 				EBA5EF1718ADC22900493FBF /* Libraries */,
 				7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */,
+				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
+				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
 				EB9B1889189A1F52001E9D60 /* Main.storyboard */,

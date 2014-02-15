@@ -10,13 +10,14 @@
 #import "SWRevealViewController.h"
 #import "INFO_4290_Final_ProjectAppDelegate.h"
 #import "INFO_4290_Final_ProjectViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface MainViewController ()
 
 @end
 
 @implementation MainViewController
-@synthesize sidebarButton, nameLabel, pictureView;
+@synthesize sidebarButton, nameLabel, pictureView,loginView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,6 +27,14 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    
+    
+    [FBLoginView class];
+    [FBProfilePictureView class];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -33,12 +42,20 @@
     [FBLoginView class];
     [FBProfilePictureView class];
     
+    loginView.delegate = self;
     
     sidebarButton.target = self.revealViewController;
     sidebarButton.action = @selector(revealToggle:);
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 	// Do any additional setup after loading the view.
+    
+    if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded){
+        
+        
+        NSLog(@"Facebook user logged in!!!!");
+        
+    }
     
 
 }

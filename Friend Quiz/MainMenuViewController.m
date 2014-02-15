@@ -89,7 +89,7 @@
     nameLabel.text = @"";
     
     //Return to the first scene
-    INFO_4290_Final_ProjectViewController *viewController = [[INFO_4290_Final_ProjectViewController alloc]init];
+    //INFO_4290_Final_ProjectViewController *viewController = [[INFO_4290_Final_ProjectViewController alloc]init];
     
  //   [self presentViewController:viewController animated:YES completion:nil];
     

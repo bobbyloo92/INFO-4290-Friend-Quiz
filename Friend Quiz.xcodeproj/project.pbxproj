@@ -37,8 +37,8 @@
 		EB9B18A3189A1F52001E9D60 /* Friend_QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9B18A2189A1F52001E9D60 /* Friend_QuizTests.m */; };
 		EBA5EF1018A9E4D400493FBF /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */; };
 		EBA5EF1618ADB97200493FBF /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */; };
-		EBA5EF1A18ADC2A100493FBF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1918ADC2A100493FBF /* SWRevealViewController.m */; };
 		EBA5EF2018ADC49000493FBF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1F18ADC49000493FBF /* MainViewController.m */; };
+		EBA5EF2318B161CC00493FBF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,10 +101,10 @@
 		EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		EBA5EF1418ADB97200493FBF /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
 		EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
-		EBA5EF1818ADC2A100493FBF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
-		EBA5EF1918ADC2A100493FBF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		EBA5EF1E18ADC49000493FBF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
 		EBA5EF1F18ADC49000493FBF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		EBA5EF2118B161CC00493FBF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +241,8 @@
 		EBA5EF1718ADC22900493FBF /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				EBA5EF1818ADC2A100493FBF /* SWRevealViewController.h */,
-				EBA5EF1918ADC2A100493FBF /* SWRevealViewController.m */,
+				EBA5EF2118B161CC00493FBF /* SWRevealViewController.h */,
+				EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -348,11 +348,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9B1888189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m in Sources */,
+				EBA5EF2318B161CC00493FBF /* SWRevealViewController.m in Sources */,
 				EB9B1884189A1F51001E9D60 /* main.m in Sources */,
 				7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */,
 				AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */,
 				7AFEE0AA189C58DA00D84FA3 /* Category.m in Sources */,
-				EBA5EF1A18ADC2A100493FBF /* SWRevealViewController.m in Sources */,
 				EBA5EF2018ADC49000493FBF /* MainViewController.m in Sources */,
 				EBA5EF1618ADB97200493FBF /* SideMenuViewController.m in Sources */,
 				EBA5EF1018A9E4D400493FBF /* MainMenuViewController.m in Sources */,

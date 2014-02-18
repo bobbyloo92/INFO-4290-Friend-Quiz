@@ -150,12 +150,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4KM-3s-md3" customClass="FBLoginView">
+                                <rect key="frame" x="199" y="81" width="76" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="w89-EC-M4K"/>
                     <connections>
+                        <outlet property="loginView2" destination="4KM-3s-md3" id="6Nb-S7-Pxf"/>
                         <outlet property="nameLabel" destination="NFn-tg-wW4" id="m9n-pF-vQT"/>
                         <outlet property="pictureView" destination="Dxd-oU-CFe" id="9Tk-e2-s1l"/>
                         <outlet property="sideBarButton" destination="lLm-3X-Kep" id="TyR-00-9PC"/>
@@ -270,8 +276,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="321" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npq-X6-ESr">
-                                <rect key="frame" x="110" y="75" width="205" height="52"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="237" translatesAutoresizingMaskIntoConstraints="NO" id="Npq-X6-ESr">
+                                <rect key="frame" x="83" y="70" width="237" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -308,7 +314,12 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZMb-c7-XXC" customClass="FBProfilePictureView">
-                                <rect key="frame" x="8" y="73" width="62" height="56"/>
+                                <rect key="frame" x="8" y="70" width="68" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCF-gN-2zm" customClass="FBLoginView">
+                                <rect key="frame" x="1" y="456" width="93" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -319,6 +330,7 @@
                         <barButtonItem key="leftBarButtonItem" title="List" id="xFv-IJ-g49"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="loginView2" destination="iCF-gN-2zm" id="wVd-KM-W0L"/>
                         <outlet property="nameLabel" destination="Npq-X6-ESr" id="z7n-2W-0CV"/>
                         <outlet property="pictureView" destination="ZMb-c7-XXC" id="pd9-EY-253"/>
                         <outlet property="sidebarButton" destination="xFv-IJ-g49" id="wjC-P9-feC"/>
@@ -326,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOE-jK-pl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1535" y="-809"/>
+            <point key="canvasLocation" x="1505" y="-718"/>
         </scene>
         <!--Pack Select View Controller - Title-->
         <scene sceneID="iv7-Nu-f09">

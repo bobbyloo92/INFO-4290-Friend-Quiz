@@ -17,7 +17,7 @@
 @end
 
 @implementation MainViewController
-@synthesize sidebarButton, nameLabel, pictureView,loginView;
+@synthesize sidebarButton, nameLabel, pictureView,loginView,loginView2;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -42,7 +42,7 @@
     [FBLoginView class];
     [FBProfilePictureView class];
     
-    loginView.delegate = self;
+    loginView2.delegate = self;
     
     sidebarButton.target = self.revealViewController;
     sidebarButton.action = @selector(revealToggle:);

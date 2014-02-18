@@ -30,7 +30,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    menuItems = [[NSArray alloc]init];
+    menuItems = @[@"Main MenuReal", @"Settings", @"My Profile", @"My Awards", @"Help"];
 	// Do any additional setup after loading the view.
+    
+   // [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,8 +60,20 @@
 {
     NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
     
+  //  static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
+    
+    if (cell==nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        
+    }
+    
+   // UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    cell.textLabel.text = [menuItems objectAtIndex:indexPath.row];
     
     return cell;
 }

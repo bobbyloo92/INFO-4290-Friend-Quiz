@@ -28,7 +28,7 @@
 @property NSMutableArray *questionSuggestedAnswers;
 @property NSMutableArray *questionAnswers;
 
-@property int questionCorrectAnswerIndex;
+@property NSMutableArray *questionCorrectAnswer;
 
 
 

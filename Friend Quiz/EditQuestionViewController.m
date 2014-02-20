@@ -33,7 +33,7 @@ questionTitleLabel,question1Label,question2Label,question3Label,question4Label;
     
     [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:selectedQuestionPackID];
     
-    //questionTitleLabel.text = [QuestionPack sharedCenter].questionTitle[0] ;
+    questionTitleLabel.text = [QuestionPack sharedCenter].questionTitle[[QuestionPack sharedCenter].questionIndex] ;
     
     
 }
@@ -46,7 +46,9 @@ questionTitleLabel,question1Label,question2Label,question3Label,question4Label;
 
 - (IBAction)buttonNext:(id)sender {
     
-    if([QuestionPack sharedCenter].questionIndex == 4)
+    [QuestionPack sharedCenter].questionIndex++;
+    
+    if([QuestionPack sharedCenter].questionIndex == 5)
     {
         [self performSegueWithIdentifier:@"toSendRequest" sender:nil];
     }
@@ -55,8 +57,6 @@ questionTitleLabel,question1Label,question2Label,question3Label,question4Label;
         [self performSegueWithIdentifier:@"toSelf" sender:nil];
     }
     
-    
-    [QuestionPack sharedCenter].questionIndex++;
     
 }
 @end

@@ -10,7 +10,7 @@
 
 @implementation QuestionPack
 
-@synthesize questionPackID, questionTitle, questionIndex, questionAnswers, questionSuggestedAnswers,questionCorrectAnswer;
+@synthesize questionPackID, questionTitle, questionIndex, questionAnswers, questionSuggestedAnswers, questionCorrectAnswerIndex;
 
 
 static QuestionPack *sharedAwardCenter = nil;    // static instance variable

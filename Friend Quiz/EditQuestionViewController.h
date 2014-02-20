@@ -14,6 +14,8 @@
 
 @property int selectedQuestionPackID;
 
+@property int correctAnswerIndex;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
 
@@ -32,12 +34,6 @@
 - (IBAction)q2EditButton:(id)sender;
 - (IBAction)q3EditButton:(id)sender;
 - (IBAction)q4EditButton:(id)sender;
-
-
-
-
-
-
 
 
 

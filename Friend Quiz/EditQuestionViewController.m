@@ -14,7 +14,7 @@
 
 @implementation EditQuestionViewController
 
-@synthesize selectedQuestionPackID,
+@synthesize selectedQuestionPackID,correctAnswerIndex,
 questionTitleLabel, question1label, question2label, question3label, question4label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,6 +30,9 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    correctAnswerIndex = -1;
+    
     
     // Get question pack information from database
     [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:selectedQuestionPackID];
@@ -56,15 +59,25 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 }
 
 - (IBAction)question1button:(id)sender {
+    
+    correctAnswerIndex = 0;
+    question1label.titleLabel.backgroundColor = [UIColor greenColor];
+    
 }
 
 - (IBAction)question2button:(id)sender {
+    
+    correctAnswerIndex = 1;
 }
 
 - (IBAction)question3button:(id)sender {
+    
+    correctAnswerIndex = 2;
 }
 
 - (IBAction)question4button:(id)sender {
+    
+    correctAnswerIndex = 3;
 }
 
 
@@ -153,17 +166,29 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 
 - (IBAction)buttonNext:(id)sender {
     
-    [QuestionPack sharedCenter].questionIndex++;
-    
-    if([QuestionPack sharedCenter].questionIndex == 5)
+    if (correctAnswerIndex == -1)
     {
-        [self performSegueWithIdentifier:@"toSendRequest" sender:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Must Choose Correct Answer" message:@"Press the correct answer to select it!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        
+        [alert show];
     }
     else
     {
-        [self performSegueWithIdentifier:@"toSelf" sender:nil];
+        
+        [QuestionPack sharedCenter].questionIndex++;
+        
+        // Send the correct answer index
+        [QuestionPack sharedCenter].questionCorrectAnswerIndex = correctAnswerIndex;
+    
+        if([QuestionPack sharedCenter].questionIndex == 5)
+        {
+            [self performSegueWithIdentifier:@"toSendRequest" sender:nil];
+        }
+        else
+        {
+            [self performSegueWithIdentifier:@"toSelf" sender:nil];
+        }
+    
     }
-    
-    
 }
 @end

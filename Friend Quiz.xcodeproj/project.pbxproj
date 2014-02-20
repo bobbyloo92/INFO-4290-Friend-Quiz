@@ -39,6 +39,9 @@
 		EBA5EF1618ADB97200493FBF /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */; };
 		EBA5EF2018ADC49000493FBF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1F18ADC49000493FBF /* MainViewController.m */; };
 		EBA5EF2318B161CC00493FBF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */; };
+		EBA5EF2618B4460C00493FBF /* SettingsMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF2518B4460C00493FBF /* SettingsMenuViewController.m */; };
+		EBA5EF2918B4462E00493FBF /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF2818B4462E00493FBF /* MyProfileViewController.m */; };
+		EBA5EF2D18B5B25D00493FBF /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA5EF2C18B5B25C00493FBF /* menu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,11 @@
 		EBA5EF1F18ADC49000493FBF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 		EBA5EF2118B161CC00493FBF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EBA5EF2418B4460C00493FBF /* SettingsMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsMenuViewController.h; sourceTree = "<group>"; };
+		EBA5EF2518B4460C00493FBF /* SettingsMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsMenuViewController.m; sourceTree = "<group>"; };
+		EBA5EF2718B4462E00493FBF /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		EBA5EF2818B4462E00493FBF /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
+		EBA5EF2C18B5B25C00493FBF /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +143,8 @@
 		EB9B186B189A1F50001E9D60 = {
 			isa = PBXGroup;
 			children = (
+				EBA5EF2418B4460C00493FBF /* SettingsMenuViewController.h */,
+				EBA5EF2518B4460C00493FBF /* SettingsMenuViewController.m */,
 				EB9B187D189A1F51001E9D60 /* Friend Quiz */,
 				EB9B189C189A1F52001E9D60 /* Friend QuizTests */,
 				EB9B1876189A1F51001E9D60 /* Frameworks */,
@@ -166,27 +176,14 @@
 		EB9B187D189A1F51001E9D60 /* Friend Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				EBA5EF2B18B5B22D00493FBF /* Images */,
+				EBA5EF2A18B446AD00493FBF /* Views */,
 				EBA5EF1718ADC22900493FBF /* Libraries */,
 				7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */,
-				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
-				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
-				AAD1949E18AC572500116E23 /* SendRequestViewController.h */,
-				AAD1949F18AC572500116E23 /* SendRequestViewController.m */,
-				AAD1945118AC452D00116E23 /* EditQuestionViewController.h */,
-				AAD1945218AC452D00116E23 /* EditQuestionViewController.m */,
-				AAD1944E18AC440700116E23 /* PackSelectViewController.h */,
-				AAD1944F18AC440700116E23 /* PackSelectViewController.m */,
 				AAD1944B18AC39D600116E23 /* QuestionPack.h */,
 				AAD1944C18AC39D600116E23 /* QuestionPack.m */,
-				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
-				EB9B188C189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.h */,
-				EB9B188D189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m */,
-				EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */,
-				EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */,
-				EBA5EF1418ADB97200493FBF /* SideMenuViewController.h */,
-				EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */,
 				7A14A318189B7029008FAEC7 /* GameStart.h */,
 				7A14A319189B7029008FAEC7 /* GameStart.m */,
 				7AF8C864189B77C30098E573 /* ChooseQuestionPacks.h */,
@@ -245,6 +242,38 @@
 				EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		EBA5EF2A18B446AD00493FBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB9B188C189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.h */,
+				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
+				EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */,
+				EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */,
+				EBA5EF1418ADB97200493FBF /* SideMenuViewController.h */,
+				EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */,
+				EBA5EF2718B4462E00493FBF /* MyProfileViewController.h */,
+				EBA5EF2818B4462E00493FBF /* MyProfileViewController.m */,
+				AAD1949E18AC572500116E23 /* SendRequestViewController.h */,
+				AAD1949F18AC572500116E23 /* SendRequestViewController.m */,
+				AAD1945118AC452D00116E23 /* EditQuestionViewController.h */,
+				AAD1945218AC452D00116E23 /* EditQuestionViewController.m */,
+				AAD1944E18AC440700116E23 /* PackSelectViewController.h */,
+				AAD1944F18AC440700116E23 /* PackSelectViewController.m */,
+				EB9B188D189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m */,
+				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
+				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EBA5EF2B18B5B22D00493FBF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EBA5EF2C18B5B25C00493FBF /* menu.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */,
+				EBA5EF2D18B5B25D00493FBF /* menu.png in Resources */,
 				EB9B1890189A1F52001E9D60 /* Images.xcassets in Resources */,
 				EB9B1882189A1F51001E9D60 /* InfoPlist.strings in Resources */,
 				EB9B188B189A1F52001E9D60 /* Main.storyboard in Resources */,
@@ -351,6 +381,7 @@
 				EBA5EF2318B161CC00493FBF /* SWRevealViewController.m in Sources */,
 				EB9B1884189A1F51001E9D60 /* main.m in Sources */,
 				7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */,
+				EBA5EF2918B4462E00493FBF /* MyProfileViewController.m in Sources */,
 				AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */,
 				7AFEE0AA189C58DA00D84FA3 /* Category.m in Sources */,
 				EBA5EF2018ADC49000493FBF /* MainViewController.m in Sources */,
@@ -363,6 +394,7 @@
 				7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */,
 				7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */,
 				AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */,
+				EBA5EF2618B4460C00493FBF /* SettingsMenuViewController.m in Sources */,
 				EB9B188E189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m in Sources */,
 				7AFEE0AD189C591900D84FA3 /* question.m in Sources */,
 				7AFEE0B0189C5AF500D84FA3 /* CategoryTV.m in Sources */,

@@ -202,7 +202,18 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
         
         // Send the correct answer index
         [QuestionPack sharedCenter].questionCorrectAnswerIndex = correctAnswerIndex;
+        
+        // Send correct answers
+        [QuestionPack sharedCenter].questionAnswers = [[NSMutableArray alloc] initWithCapacity: 5];
+        
+        
+        /*
+        [[QuestionPack sharedCenter].questionAnswers insertObject:[NSMutableArray arrayWithObjects:
+                                                question1label.titleLabel, question2label.titleLabel, question3label.titleLabel, question4label.titleLabel,nil] atIndex:[QuestionPack sharedCenter].questionIndex];
+        
+        */
     
+        // Exit Condition
         if([QuestionPack sharedCenter].questionIndex == 5)
         {
             [self performSegueWithIdentifier:@"toSendRequest" sender:nil];

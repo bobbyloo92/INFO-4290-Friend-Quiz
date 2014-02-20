@@ -37,7 +37,9 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
     // Get question detail
     questionTitleLabel.text = [QuestionPack sharedCenter].questionTitle[[QuestionPack sharedCenter].questionIndex] ;
     
-     [question1label setTitle:[[QuestionPack sharedCenter].questionSuggestedAnswers objectAtIndex:0][[QuestionPack sharedCenter].questionIndex]forState:UIControlStateNormal  ];
+     [question1label setTitle:[[QuestionPack sharedCenter].questionSuggestedAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0]forState:UIControlStateNormal  ];
+    
+
     
     
 }

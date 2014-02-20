@@ -67,6 +67,66 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 - (IBAction)question4button:(id)sender {
 }
 
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0)
+    {
+        // Canceled
+    }
+    else
+    {
+        NSString *stringInput =[alertView textFieldAtIndex:0].text;
+        [question1label setTitle:[NSString stringWithFormat:@"%@", stringInput ] forState: UIControlStateNormal];
+        [[QuestionPack sharedCenter].questionSuggestedAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0] = stringInput;
+        
+    }
+}
+
+
+- (IBAction)q1EditButton:(id)sender {
+    
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 1 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Add", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    
+    [alert setTag:0];
+    [alert show];
+    
+}
+
+- (IBAction)q2EditButton:(id)sender {
+    
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 2 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Add", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    
+    [alert setTag:1];
+    [alert show];
+    
+}
+
+- (IBAction)q3EditButton:(id)sender {
+    
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 3 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Add", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    
+    [alert setTag:2];
+    [alert show];
+    
+}
+
+- (IBAction)q4EditButton:(id)sender {
+    
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 4 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Add", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    
+    [alert setTag:3];
+    [alert show];
+    
+}
+
+
+
+
 - (IBAction)buttonNext:(id)sender {
     
     [QuestionPack sharedCenter].questionIndex++;

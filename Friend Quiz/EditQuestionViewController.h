@@ -28,6 +28,11 @@
 - (IBAction)question3button:(id)sender;
 - (IBAction)question4button:(id)sender;
 
+- (IBAction)q1EditButton:(id)sender;
+- (IBAction)q2EditButton:(id)sender;
+- (IBAction)q3EditButton:(id)sender;
+- (IBAction)q4EditButton:(id)sender;
+
 
 
 

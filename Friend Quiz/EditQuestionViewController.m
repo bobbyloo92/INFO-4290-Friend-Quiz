@@ -61,23 +61,46 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 - (IBAction)question1button:(id)sender {
     
     correctAnswerIndex = 0;
-    question1label.titleLabel.backgroundColor = [UIColor greenColor];
+    
+    question1label.backgroundColor = [UIColor colorWithRed:(255/255.0) green:(150/255.0) blue:(0/255.0) alpha:1];
+    
+    question2label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
+    question3label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
+    question4label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
     
 }
 
 - (IBAction)question2button:(id)sender {
     
     correctAnswerIndex = 1;
+    
+    question2label.backgroundColor = [UIColor colorWithRed:(255/255.0) green:(150/255.0) blue:(0/255.0) alpha:1];
+    
+    question1label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
+    question3label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
+    question4label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
 }
 
 - (IBAction)question3button:(id)sender {
     
     correctAnswerIndex = 2;
+    
+    question3label.backgroundColor = [UIColor colorWithRed:(255/255.0) green:(150/255.0) blue:(0/255.0) alpha:1];
+    
+    question1label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
+    question2label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
+    question4label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
 }
 
 - (IBAction)question4button:(id)sender {
     
     correctAnswerIndex = 3;
+    
+    question4label.backgroundColor = [UIColor colorWithRed:(255/255.0) green:(150/255.0) blue:(0/255.0) alpha:1];
+    
+    question1label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
+    question2label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
+    question3label.backgroundColor = [UIColor colorWithRed:(251/255.0) green:(255/255.0) blue:(13/255.0) alpha:1];
 }
 
 
@@ -168,7 +191,7 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
     
     if (correctAnswerIndex == -1)
     {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Must Choose Correct Answer" message:@"Press the correct answer to select it!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Choose the correct answer" message:@"Press the correct answer to select it!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         
         [alert show];
     }

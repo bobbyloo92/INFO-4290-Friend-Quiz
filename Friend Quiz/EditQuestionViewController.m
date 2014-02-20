@@ -198,20 +198,26 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
     else
     {
         
-        [QuestionPack sharedCenter].questionIndex++;
+        
         
         // Send the correct answer index
         [QuestionPack sharedCenter].questionCorrectAnswerIndex = correctAnswerIndex;
         
         // Send correct answers
-        [QuestionPack sharedCenter].questionAnswers = [[NSMutableArray alloc] initWithCapacity: 5];
-        
-        
-        /*
+        if (![QuestionPack sharedCenter].questionAnswers)
+        {
+            [QuestionPack sharedCenter].questionAnswers = [[NSMutableArray alloc] initWithCapacity: 5];
+        }
+    
         [[QuestionPack sharedCenter].questionAnswers insertObject:[NSMutableArray arrayWithObjects:
-                                                question1label.titleLabel, question2label.titleLabel, question3label.titleLabel, question4label.titleLabel,nil] atIndex:[QuestionPack sharedCenter].questionIndex];
+                                           question1label.titleLabel.text,
+                                           question2label.titleLabel.text,
+                                           question3label.titleLabel.text,
+                                           question4label.titleLabel.text, nil] atIndex: [QuestionPack sharedCenter].questionIndex];
         
-        */
+        
+        // Index +1
+        [QuestionPack sharedCenter].questionIndex++;
     
         // Exit Condition
         if([QuestionPack sharedCenter].questionIndex == 5)

@@ -14,7 +14,7 @@
 
 @implementation PackSelectViewController
 
-@synthesize selectedQuestionPackID, arrayQuestionPack, pickerQuestionPack;
+@synthesize selectedQuestionPackID;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,29 +30,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSArray *data = [[NSArray alloc]initWithObjects: @"Default Pack", @"Mix Pack", @"Easy Pack", @"Hard Pack", @"Best Friend Pack", @"Fruit Pack", @"Color Pack", @"Location Pack", nil];
-    arrayQuestionPack = data;
-    
     [QuestionPack sharedCenter].questionIndex = 0;
-    
-    // Get picker info
-    //NSString *select = [arrayQuestionPack objectAtIndex:[pickerQuestionPack selectedRowInComponent:0]];
-}
-
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    return 1;
-}
-
-
--(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-    return [arrayQuestionPack count];
-}
-
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    return [arrayQuestionPack objectAtIndex:row];
 }
 
 - (void)didReceiveMemoryWarning

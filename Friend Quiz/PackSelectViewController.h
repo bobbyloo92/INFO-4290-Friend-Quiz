@@ -11,12 +11,9 @@
 #import "EditQuestionViewController.h"
 #import "QuestionPack.h"
 
-@interface PackSelectViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface PackSelectViewController : UIViewController
 
-@property NSArray *arrayQuestionPack;
 @property int selectedQuestionPackID;
-
-@property (weak, nonatomic) IBOutlet UIPickerView *pickerQuestionPack;
 
 -(void)selectQuestionPackWithID: (int)packID;
 

@@ -220,7 +220,7 @@
                     <connections>
                         <outlet property="tableView" destination="BgJ-Qw-XeQ" id="rnt-ZM-kjR"/>
                         <segue destination="yer-yJ-kgw" kind="modal" id="ZZ7-Nq-qOi"/>
-                        <segue destination="iGk-wp-mt9" kind="custom" customClass="SWRevealViewControllerSegue" id="n8t-lw-q4f"/>
+                        <segue destination="iGk-wp-mt9" kind="custom" identifier="settingsSegue" customClass="SWRevealViewControllerSegue" id="n8t-lw-q4f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfg-K2-xAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -262,6 +262,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="listBarButton" destination="QBD-DZ-gmp" id="EpC-02-JHy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGz-Ga-lXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

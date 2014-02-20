@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsMenuViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *listBarButton;
 
 @end

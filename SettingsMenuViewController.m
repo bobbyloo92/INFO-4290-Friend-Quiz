@@ -7,6 +7,7 @@
 //
 
 #import "SettingsMenuViewController.h"
+#import "SWRevealViewController.h"
 
 @interface SettingsMenuViewController ()
 
@@ -27,6 +28,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.listBarButton.target = self.revealViewController;
+    
+    self.listBarButton.action = @selector(revealToggle:);
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    //[self.listBarButton r]
 }
 
 - (void)didReceiveMemoryWarning

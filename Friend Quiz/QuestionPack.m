@@ -10,7 +10,7 @@
 
 @implementation QuestionPack
 
-@synthesize questionPackID, questionTitle, questionIndex, questionAnswers, questionSuggestedAnswers,questionCorrectAnswer;
+@synthesize questionPackID, questionTitle, questionIndex, questionAnswers, questionSuggestedAnswers, questionCorrectAnswerIndex;
 
 
 static QuestionPack *sharedAwardCenter = nil;    // static instance variable
@@ -42,7 +42,7 @@ static QuestionPack *sharedAwardCenter = nil;    // static instance variable
     //Database code
     
     //testing code
-    questionTitle = [NSArray arrayWithObjects:
+    questionTitle = [NSMutableArray arrayWithObjects:
                      @"How old am I?",
                      @"What color do I like?",
                      @"What's my favorite food?",

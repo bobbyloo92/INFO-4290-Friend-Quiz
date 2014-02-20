@@ -504,6 +504,9 @@
                                 <state key="normal" title="Looks">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="question1button:" destination="tqz-qG-0C2" eventType="touchUpInside" id="Gb3-iS-lKc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1N-rE-mj6">
                                 <rect key="frame" x="0.0" y="300" width="320" height="37"/>
@@ -513,6 +516,9 @@
                                 <state key="normal" title="Compatibility">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="question2button:" destination="tqz-qG-0C2" eventType="touchUpInside" id="91o-Fk-ZmG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnY-kF-I97">
                                 <rect key="frame" x="0.0" y="370" width="320" height="37"/>
@@ -522,6 +528,9 @@
                                 <state key="normal" title="Humour">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="question3button:" destination="tqz-qG-0C2" eventType="touchUpInside" id="HTX-76-Mxz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okq-dg-peF">
                                 <rect key="frame" x="0.0" y="440" width="320" height="37"/>
@@ -531,6 +540,9 @@
                                 <state key="normal" title="Personality">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="question4button:" destination="tqz-qG-0C2" eventType="touchUpInside" id="ypy-62-EeH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ve1-rJ-oDB">
                                 <rect key="frame" x="20" y="232" width="47" height="37"/>
@@ -633,10 +645,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="1ol-SM-gVb"/>
                     <connections>
-                        <outlet property="question1Label" destination="2OL-T2-xlu" id="INz-oI-SqN"/>
-                        <outlet property="question2Label" destination="T1N-rE-mj6" id="cxO-PQ-8vm"/>
-                        <outlet property="question3Label" destination="cnY-kF-I97" id="Oa5-ja-AQ2"/>
-                        <outlet property="question4Label" destination="Okq-dg-peF" id="Ph9-zG-PwM"/>
+                        <outlet property="question1label" destination="2OL-T2-xlu" id="Eir-91-8Sf"/>
+                        <outlet property="question2label" destination="T1N-rE-mj6" id="GS2-eA-rlR"/>
+                        <outlet property="question3label" destination="cnY-kF-I97" id="zpC-pK-j7h"/>
+                        <outlet property="question4label" destination="Okq-dg-peF" id="1vr-rk-lMz"/>
                         <outlet property="questionTitleLabel" destination="VtW-QG-sHT" id="XHH-2E-Jec"/>
                         <segue destination="JjB-H6-aGr" kind="modal" identifier="toSendRequest" id="9O7-Jm-MUa"/>
                     </connections>

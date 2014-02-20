@@ -17,10 +17,16 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
 
-@property (weak, nonatomic) IBOutlet UIButton *question1Label;
-@property (weak, nonatomic) IBOutlet UIButton *question2Label;
-@property (weak, nonatomic) IBOutlet UIButton *question3Label;
-@property (weak, nonatomic) IBOutlet UIButton *question4Label;
+@property (weak, nonatomic) IBOutlet UIButton *question1label;
+@property (weak, nonatomic) IBOutlet UIButton *question2label;
+@property (weak, nonatomic) IBOutlet UIButton *question3label;
+@property (weak, nonatomic) IBOutlet UIButton *question4label;
+
+
+- (IBAction)question1button:(id)sender;
+- (IBAction)question2button:(id)sender;
+- (IBAction)question3button:(id)sender;
+- (IBAction)question4button:(id)sender;
 
 
 

@@ -15,7 +15,7 @@
 @implementation EditQuestionViewController
 
 @synthesize selectedQuestionPackID,
-questionTitleLabel,question1Label,question2Label,question3Label,question4Label;
+questionTitleLabel, question1label, question2label, question3label, question4label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,9 +31,13 @@ questionTitleLabel,question1Label,question2Label,question3Label,question4Label;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    // Get question pack information from database
     [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:selectedQuestionPackID];
     
+    // Get question detail
     questionTitleLabel.text = [QuestionPack sharedCenter].questionTitle[[QuestionPack sharedCenter].questionIndex] ;
+    
+     [question1label setTitle:[[QuestionPack sharedCenter].questionSuggestedAnswers objectAtIndex:0][[QuestionPack sharedCenter].questionIndex]forState:UIControlStateNormal  ];
     
     
 }
@@ -42,6 +46,18 @@ questionTitleLabel,question1Label,question2Label,question3Label,question4Label;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)question1button:(id)sender {
+}
+
+- (IBAction)question2button:(id)sender {
+}
+
+- (IBAction)question3button:(id)sender {
+}
+
+- (IBAction)question4button:(id)sender {
 }
 
 - (IBAction)buttonNext:(id)sender {

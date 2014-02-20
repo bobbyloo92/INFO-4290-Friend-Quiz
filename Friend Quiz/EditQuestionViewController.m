@@ -76,9 +76,33 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
     }
     else
     {
+        
+        // Update the new answer
+        
+        if (alertView.tag == 0)
+        {
         NSString *stringInput =[alertView textFieldAtIndex:0].text;
         [question1label setTitle:[NSString stringWithFormat:@"%@", stringInput ] forState: UIControlStateNormal];
         [[QuestionPack sharedCenter].questionSuggestedAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0] = stringInput;
+        }
+        else if (alertView.tag == 1)
+        {
+            NSString *stringInput =[alertView textFieldAtIndex:0].text;
+            [question2label setTitle:[NSString stringWithFormat:@"%@", stringInput ] forState: UIControlStateNormal];
+            [[QuestionPack sharedCenter].questionSuggestedAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][1] = stringInput;
+        }
+        else if (alertView.tag == 2)
+        {
+            NSString *stringInput =[alertView textFieldAtIndex:0].text;
+            [question3label setTitle:[NSString stringWithFormat:@"%@", stringInput ] forState: UIControlStateNormal];
+            [[QuestionPack sharedCenter].questionSuggestedAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][2] = stringInput;
+        }
+        else if (alertView.tag == 3)
+        {
+            NSString *stringInput =[alertView textFieldAtIndex:0].text;
+            [question4label setTitle:[NSString stringWithFormat:@"%@", stringInput ] forState: UIControlStateNormal];
+            [[QuestionPack sharedCenter].questionSuggestedAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][3] = stringInput;
+        }
         
     }
 }
